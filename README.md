@@ -1,4 +1,4 @@
-This code shows how to harness Adam Argyle's excellent on how to work the HTML `dialog` element. 
+This code shows how to harness Adam Argyle's [excellent work](https://web.dev/shows/gui-challenges/GDzzIlRhEzM/) on how to use the HTML `dialog` element (see link below). 
 ## JavaScript
 
 This JavaScript initializes two dialogs. You can have as many dialogs as you want. The arguments are: 
