@@ -1,0 +1,18 @@
+@import "https://unpkg.com/open-props";
+
+/* @import "dialog.css"; */
+@import "dialog-main.css";
+
+body {
+  display: grid;
+  place-content: center;
+  padding-inline: var(--size-5);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  gap: var(--size-5);
+}
+

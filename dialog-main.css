@@ -1,0 +1,46 @@
+html:has(dialog[open][modal-mode="mega"]) {
+    overflow: hidden;
+}
+  
+dialog {
+    display: grid;
+    align-content: start;
+
+    /* dialog background color */
+    background-color: lightgray;
+    
+    color: var(--text-1);
+    max-inline-size: min(90vw, var(--size-content-3));
+    margin: auto;
+    padding: 0;
+    position: fixed;
+    inset: 0;
+    border-radius: var(--radius-2);
+    box-shadow: var(--shadow-3);
+    z-index: var(--layer-important);
+    overflow: hidden;
+    /* transition: opacity .5s var(--ease-3); */
+    border: 1px solid gray;
+    
+    animation: var(--animation-scale-down) forwards;
+    animation-timing-function: var(--ease-squish-3);
+
+    &:not([open]) {
+      pointer-events: none;
+      opacity: 0;
+    }
+ 
+    &::backdrop {
+        background-color: rgba(0,0,0,.4);
+        backdrop-filter: blur(2px);
+        transition: backdrop-filter .5s ease;
+    }
+  
+    &[loading] {
+      visibility: hidden;
+    }
+  
+    &[open] {
+        animation: var(--animation-slide-in-up) forwards;
+    }
+}
